@@ -232,6 +232,11 @@ namespace StageAesthetic.Variants.Stage1
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("bbSimpleGrassPrefab"))
                     {
                         mr.sharedMaterial.color = new Color32(11, 58, 28, 255);
@@ -318,6 +323,11 @@ namespace StageAesthetic.Variants.Stage1
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("bbSimpleGrassPrefab"))
                     {
                         mr.sharedMaterial.color = new Color32(45, 45, 45, 211);

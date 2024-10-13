@@ -123,6 +123,11 @@ namespace StageAesthetic.Variants.Stage3
                     var meshBase = mr.gameObject;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         if (meshBase.name.Contains("Terrain") || meshBase.name.Contains("Mountain"))
                         {
                             if (mr.sharedMaterial)

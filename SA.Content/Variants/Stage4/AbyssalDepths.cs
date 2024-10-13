@@ -223,6 +223,11 @@ namespace StageAesthetic.Variants.Stage4
                     Transform meshParent = meshBase.transform.parent;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         if (meshParent != null)
                         {
                             if (meshBase.name.Contains("Mesh") && meshParent.name.Contains("Ruin") && renderer.sharedMaterial)

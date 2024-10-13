@@ -23,6 +23,11 @@ namespace StageAesthetic.Variants.Stage4
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("Grass"))
                     {
                         if (mr.sharedMaterial != null)
@@ -61,6 +66,11 @@ namespace StageAesthetic.Variants.Stage4
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("Grass"))
                     {
                         if (mr.sharedMaterial != null)
@@ -106,6 +116,11 @@ namespace StageAesthetic.Variants.Stage4
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("Grass"))
                     {
                         if (mr.sharedMaterial != null)
@@ -149,6 +164,11 @@ namespace StageAesthetic.Variants.Stage4
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("Ship"))
                     {
                         var light = meshBase.AddComponent<Light>();
@@ -207,6 +227,11 @@ namespace StageAesthetic.Variants.Stage4
                     var meshParent = meshBase.transform.parent;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         if (meshParent != null)
                         {
                             if ((meshBase.name.Contains("Spikes") || meshBase.name.Contains("Stalactite") || meshBase.name.Contains("Stalagmite") || meshBase.name.Contains("Level Wall") || meshBase.name.Contains("Mesh")) && (meshParent.name.Contains("Cave") || meshParent.name.Contains("Terrain") || meshParent.name.Contains("Stalagmite")))

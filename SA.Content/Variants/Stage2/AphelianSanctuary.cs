@@ -105,6 +105,11 @@ namespace StageAesthetic.Variants.Stage2
                 var meshParent = meshBase.transform.parent;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshParent != null)
                     {
                         bool biggerProps = meshBase.name.Contains("CirclePot") || meshBase.name.Contains("BrokenPot") || meshBase.name.Contains("Planter") || meshBase.name.Contains("AW_Cube") || meshBase.name.Contains("Mesh, Cube") || meshBase.name.Contains("AncientLoft_WaterFenceType") || meshBase.name.Contains("Tile") || meshBase.name.Contains("Rock") || meshBase.name.Contains("Pillar") || meshBase.name.Contains("Boulder") || meshBase.name.Contains("Step") || meshBase.name.Equals("LightStatue") || meshBase.name.Equals("LightStatue_Stone") || meshBase.name.Equals("FountainLG") || meshBase.name.Equals("Shrine") || meshBase.name.Equals("Sculpture");
@@ -150,6 +155,11 @@ namespace StageAesthetic.Variants.Stage2
                     Transform meshParent = meshBase.transform.parent;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         if (meshParent != null)
                         {
                             if ((meshParent.name.Contains("TempleTop") && meshBase.name.Contains("RuinBlock") || meshBase.name.Contains("GPRuinBlockQuarter")) && renderer.sharedMaterial)
@@ -184,6 +194,11 @@ namespace StageAesthetic.Variants.Stage2
                     GameObject meshBase = sRenderer.gameObject;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         bool biggerProps = meshBase.name.Contains("CirclePot") || meshBase.name.Contains("Planter") || meshBase.name.Contains("AW_Cube") || meshBase.name.Contains("Mesh, Cube") || meshBase.name.Contains("AncientLoft_WaterFenceType") || meshBase.name.Contains("RuinBlock") || meshBase.name.Contains("Pillar") || meshBase.name.Equals("LightStatue") || meshBase.name.Equals("LightStatue_Stone") || meshBase.name.Equals("FountainLG") || meshBase.name.Equals("Shrine") || meshBase.name.Equals("Sculpture");
                         if (biggerProps)
                             sRenderer.sharedMaterial = detailMat3;
@@ -201,8 +216,13 @@ namespace StageAesthetic.Variants.Stage2
             foreach (MeshRenderer mr in meshList)
             {
                 var meshBase = mr.gameObject;
-                if (meshBase)
+                if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("spmBonsai1V1_LOD0") || meshBase.name.Contains("spmBonsai1V2_LOD0"))
                     {
                         if (mr.sharedMaterial)
@@ -225,8 +245,13 @@ namespace StageAesthetic.Variants.Stage2
             foreach (MeshRenderer mr in meshList)
             {
                 var meshBase = mr.gameObject;
-                if (meshBase)
+                if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("spmBonsai1V1_LOD0") || meshBase.name.Contains("spmBonsai1V2_LOD0"))
                     {
                         if (mr.sharedMaterial)

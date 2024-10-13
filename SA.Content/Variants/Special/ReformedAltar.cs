@@ -112,6 +112,11 @@ namespace StageAesthetic.Variants.Special
                 GameObject meshBase = renderer.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (grassMat2 && meshBase.name.Contains("GrassTall") && renderer.sharedMaterial)
                     {
                         renderer.sharedMaterial = grassMat2;

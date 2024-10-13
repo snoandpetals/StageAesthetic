@@ -106,6 +106,11 @@ namespace StageAesthetic.Variants.Stage4
                     var meshBase = smr.gameObject;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         if (meshBase.name.Contains("BounceStem"))
                         {
                             switch (smr.sharedMaterial)
@@ -126,6 +131,11 @@ namespace StageAesthetic.Variants.Stage4
                     var meshBase = mr.gameObject;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         if (meshBase.name.Contains("Terrain") || meshBase.name.Contains("Gianticus") || meshBase.name.Contains("Tree Big Bottom") || meshBase.name.Contains("Tree D") || meshBase.name.Contains("Wall") || meshBase.name.Contains("RJRoot") || meshBase.name.Contains("RJShroomShelf"))
                         {
                             if (mr.sharedMaterial)
@@ -173,6 +183,11 @@ namespace StageAesthetic.Variants.Stage4
                 var meshBase = l.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     l.color = new Color32(255, 131, 117, 255);
                     l.range = 15;
                     l.intensity = 1f;
@@ -244,6 +259,11 @@ namespace StageAesthetic.Variants.Stage4
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("RJShroomFoliage_") || meshBase.name.Contains("RJTreeBigFoliage_"))
                     {
                         mr.sharedMaterial.color = new Color32(0, 0, 0, 255);

@@ -50,6 +50,11 @@ namespace StageAesthetic.Variants.Stage1
                     GameObject meshBase = renderer.gameObject;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         if (meshBase.name.Contains("TLTerrain") && !meshBase.name.Contains("Vines") && !meshBase.name.Contains("GiantFlower") && !meshBase.name.Contains("Ship") && renderer.sharedMaterial)
                             renderer.sharedMaterial = terrainMat;
                         // the big flowers dont play well with material changes, so I added a color change to match the theme

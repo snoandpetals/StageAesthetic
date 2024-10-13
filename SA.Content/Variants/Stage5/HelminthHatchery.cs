@@ -67,6 +67,11 @@ namespace StageAesthetic.Variants.Stage5
                 GameObject meshBase = renderer.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if ((meshBase.name.Contains("HRSection") || meshBase.name.Contains("HRGroundCover")) && renderer.sharedMaterial)
                     {
                         renderer.sharedMaterial = Main.moonDetailMat2;

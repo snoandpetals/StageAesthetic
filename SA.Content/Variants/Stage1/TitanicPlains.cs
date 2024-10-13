@@ -175,6 +175,11 @@ namespace StageAesthetic.Variants.Stage1
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("spmGPGrass_LOD0"))
                     {
                         if (mr.sharedMaterial)

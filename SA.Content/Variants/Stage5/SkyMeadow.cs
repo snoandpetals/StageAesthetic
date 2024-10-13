@@ -712,6 +712,11 @@ namespace StageAesthetic.Variants.Stage5
                     GameObject meshBase = renderer.gameObject;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         if (meshBase.name.Contains("Grass") && renderer.sharedMaterial)
                         {
                             GameObject.Destroy(meshBase);
@@ -735,6 +740,11 @@ namespace StageAesthetic.Variants.Stage5
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("Edge Clouds"))
                     {
                         meshBase.SetActive(false);
@@ -794,6 +804,11 @@ namespace StageAesthetic.Variants.Stage5
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("spmSMGrass"))
                     {
                         if (mr.sharedMaterial != null)
@@ -849,6 +864,11 @@ namespace StageAesthetic.Variants.Stage5
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("spmSMGrass"))
                     {
                         if (mr.sharedMaterial != null)
@@ -904,6 +924,11 @@ namespace StageAesthetic.Variants.Stage5
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
+                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    {
+                        Debug.Log("erm... what the halcyonite");
+                        continue;
+                    }
                     if (meshBase.name.Contains("spmSMGrass"))
                     {
                         if (mr.sharedMaterial != null)

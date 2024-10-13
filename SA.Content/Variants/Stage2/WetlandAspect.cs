@@ -138,6 +138,11 @@ namespace StageAesthetic.Variants.Stage2
                     var meshBase = mr.gameObject;
                     if (meshBase != null)
                     {
+                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        {
+                            Debug.Log("erm... what the halcyonite");
+                            continue;
+                        }
                         if (meshBase.name.Contains("Boulder") || meshBase.name.Contains("Pebble") || meshBase.name.Contains("Blender") || meshBase.name.Contains("Trunk") || meshBase.name.Contains("Door") || meshBase.name.Contains("Frame"))
                         {
                             if (mr.sharedMaterial != null)
