@@ -264,7 +264,7 @@ namespace StageAesthetic.Variants.Stage3
                     var meshBase = mr.gameObject;
                     if (meshBase != null)
                     {
-                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        if (meshBase.name.ToLower().Contains("halcyon")  || meshBase.name.ToLower().Contains("beacon"))
                         {
                             Debug.Log("erm... what the halcyonite");
                             continue;

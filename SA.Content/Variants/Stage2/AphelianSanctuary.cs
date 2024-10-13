@@ -105,7 +105,7 @@ namespace StageAesthetic.Variants.Stage2
                 var meshParent = meshBase.transform.parent;
                 if (meshBase != null)
                 {
-                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    if (meshBase.name.ToLower().Contains("halcyon")  || meshBase.name.ToLower().Contains("beacon"))
                     {
                         Debug.Log("erm... what the halcyonite");
                         continue;
@@ -155,7 +155,7 @@ namespace StageAesthetic.Variants.Stage2
                     Transform meshParent = meshBase.transform.parent;
                     if (meshBase != null)
                     {
-                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        if (meshBase.name.ToLower().Contains("halcyon")  || meshBase.name.ToLower().Contains("beacon"))
                         {
                             Debug.Log("erm... what the halcyonite");
                             continue;
@@ -194,7 +194,7 @@ namespace StageAesthetic.Variants.Stage2
                     GameObject meshBase = sRenderer.gameObject;
                     if (meshBase != null)
                     {
-                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        if (meshBase.name.ToLower().Contains("halcyon")  || meshBase.name.ToLower().Contains("beacon"))
                         {
                             Debug.Log("erm... what the halcyonite");
                             continue;
@@ -218,7 +218,7 @@ namespace StageAesthetic.Variants.Stage2
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
-                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    if (meshBase.name.ToLower().Contains("halcyon")  || meshBase.name.ToLower().Contains("beacon"))
                     {
                         Debug.Log("erm... what the halcyonite");
                         continue;
@@ -247,7 +247,7 @@ namespace StageAesthetic.Variants.Stage2
                 var meshBase = mr.gameObject;
                 if (meshBase != null)
                 {
-                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    if (meshBase.name.ToLower().Contains("halcyon")  || meshBase.name.ToLower().Contains("beacon"))
                     {
                         Debug.Log("erm... what the halcyonite");
                         continue;

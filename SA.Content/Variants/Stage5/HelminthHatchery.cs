@@ -67,7 +67,7 @@ namespace StageAesthetic.Variants.Stage5
                 GameObject meshBase = renderer.gameObject;
                 if (meshBase != null)
                 {
-                    if (meshBase.name.ToLower().Contains("halcyon"))
+                    if (meshBase.name.ToLower().Contains("halcyon")  || meshBase.name.ToLower().Contains("beacon"))
                     {
                         Debug.Log("erm... what the halcyonite");
                         continue;

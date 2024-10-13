@@ -223,7 +223,7 @@ namespace StageAesthetic.Variants.Stage4
                     Transform meshParent = meshBase.transform.parent;
                     if (meshBase != null)
                     {
-                        if (meshBase.name.ToLower().Contains("halcyon"))
+                        if (meshBase.name.ToLower().Contains("halcyon")  || meshBase.name.ToLower().Contains("beacon"))
                         {
                             Debug.Log("erm... what the halcyonite");
                             continue;
