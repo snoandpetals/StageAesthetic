@@ -60,11 +60,11 @@ namespace StageAesthetic.Variants.Stage4
             fog.fogColorEnd.value = new Color(0.3272f, 0.3711f, 0.4057f, 0.95f);
             fog.fogColorMid.value = new Color(0.2864f, 0.2667f, 0.3216f, 0.55f);
             fog.fogColorStart.value = new Color(0.2471f, 0.2471f, 0.2471f, 0.05f);
-            fog.fogPower.value = 2f;
             fog.fogZero.value = -0.02f;
-            fog.fogOne.value = 0.025f;
-            fog.skyboxStrength.value = 0f;
+            fog.fogOne.value = 0.05f;
             fog.fogIntensity.value = 1f;
+            fog.fogPower.value = 1.25f;
+            fog.skyboxStrength.value = 0f;
 
             // cgrade.colorFilter.value = new Color32(148, 206, 183, 255);
             //cgrade.colorFilter.overrideState = true;

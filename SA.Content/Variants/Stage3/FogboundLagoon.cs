@@ -64,8 +64,11 @@ namespace StageAesthetic.Variants.Stage3
             fog.fogColorStart.value = new Color32(140, 117, 150, 37);
             fog.fogColorMid.value = new Color32(84, 89, 117, 50);
             fog.fogColorEnd.value = new Color32(74, 87, 91, 255);
+            fog.fogZero.value = -0.02f;
+            fog.fogOne.value = 0.05f;
+            fog.fogIntensity.value = 1f;
+            fog.fogPower.value = 1.25f;
             fog.skyboxStrength.value = 0f;
-            fog.fogZero.value = -0.12f;
             cg.SetAllOverridesTo(true);
             cg.colorFilter.value = new Color32(136, 157, 162, 255);
             var wc = GameObject.Find("HOLDER: Weather");

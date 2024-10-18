@@ -61,11 +61,13 @@ namespace StageAesthetic.Variants.Stage5
             VanillaFoliage();
 
             fog.fogColorStart.value = new Color32(10, 61, 99, 100);
-            fog.fogColorMid.value = new Color32(5, 42, 79, 150);
+            fog.fogColorMid.value = new Color32(5, 40, 68, 200);
             fog.fogColorEnd.value = new Color32(1, 20, 45, 255);
-            fog.fogOne.value = 0.3f;
-            fog.fogIntensity.value = 0.65f;
             fog.fogZero.value = -0.02f;
+            fog.fogOne.value = 0.05f;
+
+            fog.fogIntensity.value = 0.75f;
+            fog.fogPower.value = 1.25f;
 
             fog.skyboxStrength.value = 0f;
         }

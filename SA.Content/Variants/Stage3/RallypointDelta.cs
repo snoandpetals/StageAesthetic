@@ -21,9 +21,11 @@ namespace StageAesthetic.Variants.Stage3
             fog.fogColorStart.value = new Color32(47, 52, 62, 50);
             fog.fogColorMid.value = new Color32(72, 80, 98, 165);
             fog.fogColorEnd.value = new Color32(90, 101, 119, 255);
-            fog.skyboxStrength.value = 0.15f;
-            fog.fogZero.value = -0.05f;
-            fog.fogOne.value = 0.4f;
+            fog.fogZero.value = -0.02f;
+            fog.fogOne.value = 0.05f;
+            fog.fogIntensity.value = 1f;
+            fog.fogPower.value = 1.25f;
+            fog.skyboxStrength.value = 0f;
 
             var sun = GameObject.Find("Directional Light (SUN)");
             var sunLight = Object.Instantiate(GameObject.Find("Directional Light (SUN)")).GetComponent<Light>();
